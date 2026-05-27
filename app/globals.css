@@ -130,6 +130,54 @@ body {
   border-color: rgba(124, 58, 237, 0.5);
 }
 
+/* ── Splash screen ── */
+@keyframes splashSlideLeft {
+  from { opacity: 0; transform: translateX(-100px) scale(0.8); }
+  to   { opacity: 1; transform: translateX(0)      scale(1); }
+}
+@keyframes splashSlideRight {
+  from { opacity: 0; transform: translateX(100px) scale(0.8); }
+  to   { opacity: 1; transform: translateX(0)     scale(1); }
+}
+@keyframes splashFadeScale {
+  from { opacity: 0; transform: scale(0.85); }
+  to   { opacity: 1; transform: scale(1); }
+}
+@keyframes splashFadeUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes splashLineExpand {
+  to { transform: scaleX(1); }
+}
+@keyframes splashGradientShift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ── Logo carousel ── */
+@keyframes logo-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-33.333%); }
+}
+.logo-track {
+  animation: logo-scroll 22s linear infinite;
+}
+.logo-track:hover {
+  animation-play-state: paused;
+}
+
+/* ── Experience modal ── */
+@keyframes modalExpand {
+  from { opacity: 0; transform: scale(0.92) translateY(16px); }
+  to   { opacity: 1; transform: scale(1)    translateY(0); }
+}
+@keyframes slideContentFade {
+  from { opacity: 0; transform: translateX(12px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: var(--bg); }
