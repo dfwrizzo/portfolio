@@ -7,17 +7,17 @@ const skillGroups = [
   {
     category: "Tools & Tech",
     accent: "cyan",
-    skills: ["Visual Studio", "Git & GitHub", "WebGL", "Unity Animator", "Physics Engine"],
+    skills: ["Firebase", "Vercel", "Visual Studio", "Git & GitHub", "WebGL", "Unity Animator"],
   },
   {
-    category: "Design",
+    category: "Design & Platforms",
     accent: "violet",
-    skills: ["Game Mechanics", "UI/UX Design", "Prototyping", "Playtesting", "Asset Integration"],
+    skills: ["Squarespace", "UI/UX Design", "Prototyping", "Asset Integration", "Web Development"],
   },
   {
-    category: "Soft Skills",
+    category: "Analytics & Productivity",
     accent: "emerald",
-    skills: ["Team Leadership", "Collaboration", "Project Management", "Problem Solving", "Agile/Scrum"],
+    skills: ["Mixpanel", "Excel", "Project Management", "Agile/Scrum", "Team Leadership"],
   },
 ];
 
