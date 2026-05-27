@@ -68,18 +68,17 @@ export default function About() {
 
             <div className="space-y-3">
               {[
-                { icon: "🎮", label: "Specialization", value: "2D/3D Unity Games" },
-                { icon: "💻", label: "Languages", value: "C#" },
-                { icon: "🛠️", label: "Engine", value: "Unity" },
-                { icon: "🎓", label: "Capstone", value: "CodeQuest — Team Lead" },
-                { icon: "🌐", label: "Platforms", value: "PC · WebGL · Browser" },
+                { label: "Specialization", value: "2D/3D Unity Games" },
+                { label: "Languages", value: "C#" },
+                { label: "Engine", value: "Unity" },
+                { label: "Capstone", value: "CodeQuest — Team Lead" },
+                { label: "Platforms", value: "PC · WebGL · Browser" },
               ].map((item) => (
                 <div
                   key={item.label}
                   className="flex items-center justify-between py-2.5 border-b border-slate-800/60 last:border-0"
                 >
-                  <span className="text-slate-500 text-sm flex items-center gap-2">
-                    <span>{item.icon}</span>
+                  <span className="text-slate-500 text-sm">
                     {item.label}
                   </span>
                   <span className="text-slate-200 text-sm font-medium">

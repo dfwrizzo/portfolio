@@ -11,7 +11,7 @@ const games = [
     glowColor: "rgba(239, 68, 68, 0.15)",
     accentColor: "text-red-400",
     borderColor: "border-red-900/40",
-    icon: "🧟",
+    icon: "zombie",
   },
   {
     title: "Purgatory",
@@ -25,7 +25,7 @@ const games = [
     glowColor: "rgba(124, 58, 237, 0.15)",
     accentColor: "text-purple-400",
     borderColor: "border-purple-900/40",
-    icon: "🔫",
+    icon: "shooter",
   },
   {
     title: "CodeQuest",
@@ -39,7 +39,7 @@ const games = [
     glowColor: "rgba(6, 182, 212, 0.15)",
     accentColor: "text-cyan-400",
     borderColor: "border-cyan-900/40",
-    icon: "🧩",
+    icon: "puzzle",
   },
   {
     title: "Pokemon Top Trumps",
@@ -53,7 +53,7 @@ const games = [
     glowColor: "rgba(234, 179, 8, 0.15)",
     accentColor: "text-yellow-400",
     borderColor: "border-yellow-900/40",
-    icon: "🃏",
+    icon: "card",
   },
 ];
 
@@ -84,7 +84,7 @@ export default function Projects() {
             >
               {/* Card header */}
               <div className={`bg-gradient-to-br ${game.gradient} p-8 flex items-center justify-between`}>
-                <span className="text-5xl">{game.icon}</span>
+                <span className="text-slate-300"><GameIcon type={game.icon} /></span>
                 <span
                   className={`text-xs font-medium px-3 py-1 rounded-full border ${game.borderColor} ${game.accentColor} bg-black/20`}
                 >
@@ -144,6 +144,35 @@ export default function Projects() {
         </div>
       </div>
     </section>
+  );
+}
+
+function GameIcon({ type }: { type: string }) {
+  if (type === "zombie") return (
+    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+      <circle cx="12" cy="8" r="4" />
+      <path d="M8 8h1m6 0h1M10 10s.5 1 2 1 2-1 2-1" />
+      <path d="M5 20c0-4 3-6 7-6s7 2 7 6" />
+      <path d="M3 14l2 2M21 14l-2 2" />
+    </svg>
+  );
+  if (type === "shooter") return (
+    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+      <path d="M3 12h10M17 8l4 4-4 4M13 12h4" />
+      <circle cx="7" cy="12" r="2" />
+      <path d="M7 6V4M7 20v-2M3 12H1M13 12h2" />
+    </svg>
+  );
+  if (type === "puzzle") return (
+    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+      <path d="M7 3h4v3a1 1 0 001 1h2a1 1 0 001-1V3h4v4h-3a1 1 0 00-1 1v2a1 1 0 001 1h3v4h-4v-3a1 1 0 00-1-1h-2a1 1 0 00-1 1v3H7v-4h3a1 1 0 001-1v-2a1 1 0 00-1-1H7V3z" />
+    </svg>
+  );
+  return (
+    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+      <rect x="2" y="5" width="20" height="14" rx="2" />
+      <path d="M8 12h2M9 11v2M14 12h2M15 11v2" />
+    </svg>
   );
 }
 

@@ -49,11 +49,11 @@ export default function Contact() {
 
           {/* Email CTA */}
           <a
-            href="mailto:angelo@punx.ai"
+            href="mailto:castillo.angelo2024@gmail.com"
             className="btn-glow inline-flex items-center gap-3 px-8 py-4 rounded-full bg-purple-600 hover:bg-purple-500 text-white font-semibold transition-colors duration-200 mb-12"
           >
             <EmailIcon />
-            angelo@punx.ai
+            castillo.angelo2024@gmail.com
           </a>
 
           {/* Socials */}

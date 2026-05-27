@@ -76,8 +76,8 @@ export default function Skills() {
 
         {/* Unity highlight bar */}
         <div className="mt-12 rounded-2xl bg-gradient-to-r from-purple-950/40 via-[#12121a] to-cyan-950/40 border border-purple-900/30 p-6 flex flex-col sm:flex-row items-center gap-4">
-          <div className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center text-2xl flex-shrink-0">
-            🎮
+          <div className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center flex-shrink-0">
+            <GamepadIcon />
           </div>
           <div>
             <h4 className="text-white font-semibold">Primary Stack</h4>
@@ -93,5 +93,16 @@ export default function Skills() {
         </div>
       </div>
     </section>
+  );
+}
+
+function GamepadIcon() {
+  return (
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-slate-400">
+      <rect x="2" y="6" width="20" height="12" rx="3" />
+      <path d="M6 12h4M8 10v4" />
+      <circle cx="16" cy="11" r="1" fill="currentColor" stroke="none" />
+      <circle cx="18" cy="13" r="1" fill="currentColor" stroke="none" />
+    </svg>
   );
 }
