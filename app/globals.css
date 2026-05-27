@@ -130,27 +130,17 @@ body {
 }
 
 /* ── Splash screen ── */
-@keyframes boxAppear {
-  from { opacity: 0; transform: scale(0.8); }
-  to   { opacity: 1; transform: scale(1); }
+@keyframes slashShoot {
+  0%   { left: -2px; }
+  100% { left: calc(100% + 2px); }
 }
-@keyframes boxPop {
-  0%   { transform: scale(1);    opacity: 1; }
-  20%  { transform: scale(0.93); opacity: 1; }
-  55%  { transform: scale(1.35); opacity: 0.7; }
-  100% { transform: scale(2.2);  opacity: 0; }
+@keyframes maskWipe {
+  from { clip-path: inset(0 100% 0 0); }
+  to   { clip-path: inset(0 0% 0 0); }
 }
-@keyframes waveSlosh {
-  0%, 100% { transform: translateX(0)    scaleY(1); }
-  50%       { transform: translateX(-8%) scaleY(1.6); }
-}
-@keyframes fadeInFast {
-  from { opacity: 0; transform: translateY(8px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-@keyframes titleReveal {
-  from { opacity: 0; transform: scale(0.88) translateY(14px); }
-  to   { opacity: 1; transform: scale(1)    translateY(0); }
+@keyframes scaleInX {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
 }
 
 /* ── Logo carousel ── */
