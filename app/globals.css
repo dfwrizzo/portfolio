@@ -129,6 +129,19 @@ body {
   border-color: rgba(239, 68, 68, 0.45);
 }
 
+/* ── Splash screen ── */
+@keyframes slashShoot {
+  0%   { left: -2px; }
+  100% { left: calc(100% + 2px); }
+}
+@keyframes maskWipe {
+  from { clip-path: inset(0 100% 0 0); }
+  to   { clip-path: inset(0 0% 0 0); }
+}
+@keyframes scaleInX {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
 
 /* ── Logo carousel ── */
 @keyframes logo-scroll {
