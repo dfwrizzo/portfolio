@@ -3,10 +3,10 @@
 import { useState, useEffect } from "react";
 
 const links = [
-  { label: "About", href: "#about" },
-  { label: "Skills", href: "#skills" },
-  { label: "Games", href: "#projects" },
-  { label: "Contact", href: "#contact" },
+  { label: "Stack",      href: "#stack"      },
+  { label: "Games",      href: "#games"      },
+  { label: "Experience", href: "#experience" },
+  { label: "Contact",    href: "#contact"    },
 ];
 
 export default function Navbar() {
@@ -28,10 +28,7 @@ export default function Navbar() {
       }`}
     >
       <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        <a
-          href="#"
-          className="text-lg font-bold tracking-tight gradient-text"
-        >
+        <a href="#" className="text-lg font-bold tracking-tight gradient-text">
           Rizzo.dev
         </a>
 
@@ -66,15 +63,9 @@ export default function Navbar() {
           aria-label="Toggle menu"
         >
           <div className="space-y-1.5">
-            <span
-              className={`block h-0.5 w-6 bg-current transition-all duration-300 ${open ? "rotate-45 translate-y-2" : ""}`}
-            />
-            <span
-              className={`block h-0.5 w-6 bg-current transition-all duration-300 ${open ? "opacity-0" : ""}`}
-            />
-            <span
-              className={`block h-0.5 w-6 bg-current transition-all duration-300 ${open ? "-rotate-45 -translate-y-2" : ""}`}
-            />
+            <span className={`block h-0.5 w-6 bg-current transition-all duration-300 ${open ? "rotate-45 translate-y-2" : ""}`} />
+            <span className={`block h-0.5 w-6 bg-current transition-all duration-300 ${open ? "opacity-0" : ""}`} />
+            <span className={`block h-0.5 w-6 bg-current transition-all duration-300 ${open ? "-rotate-45 -translate-y-2" : ""}`} />
           </div>
         </button>
       </nav>
