@@ -1,3 +1,5 @@
+import ProfilePhoto from "@/app/components/ProfilePhoto";
+
 export default function About() {
   return (
     <section id="about" className="py-24 px-6">
@@ -59,9 +61,7 @@ export default function About() {
           {/* Card */}
           <div className="card-glow rounded-2xl bg-[#12121a] p-8">
             <div className="mb-6">
-              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-red-600 to-red-400 flex items-center justify-center text-2xl font-bold text-white mb-4">
-                AC
-              </div>
+              <ProfilePhoto />
               <h3 className="text-xl font-bold text-white">Angelo Castillo</h3>
               <p className="text-red-400 text-sm mt-1">Unity Developer · Game Designer</p>
             </div>
@@ -93,6 +93,7 @@ export default function About() {
     </section>
   );
 }
+
 
 function GithubIcon() {
   return (
