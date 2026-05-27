@@ -29,9 +29,9 @@ export default function LogoCarousel() {
       <div className="relative">
         {/* Fade edges */}
         <div className="absolute left-0 top-0 bottom-0 w-24 z-10 pointer-events-none"
-          style={{ background: "linear-gradient(to right, #0d0d14, transparent)" }} />
+          style={{ background: "linear-gradient(to right, #0d0d0d, transparent)" }} />
         <div className="absolute right-0 top-0 bottom-0 w-24 z-10 pointer-events-none"
-          style={{ background: "linear-gradient(to left, #0d0d14, transparent)" }} />
+          style={{ background: "linear-gradient(to left, #0d0d0d, transparent)" }} />
 
         <div className="logo-track flex items-center gap-16 w-max">
           {track.map((company, i) => (

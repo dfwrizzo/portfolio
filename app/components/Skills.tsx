@@ -22,17 +22,17 @@ const skillGroups = [
 ];
 
 const accentMap: Record<string, string> = {
-  purple: "text-purple-400 border-purple-700/40 bg-purple-950/20",
-  cyan: "text-cyan-400 border-cyan-700/40 bg-cyan-950/20",
-  violet: "text-violet-400 border-violet-700/40 bg-violet-950/20",
-  emerald: "text-emerald-400 border-emerald-700/40 bg-emerald-950/20",
+  purple: "text-red-400 border-red-700/40 bg-red-950/20",
+  cyan: "text-slate-200 border-slate-600/40 bg-slate-900/20",
+  violet: "text-red-300 border-red-800/40 bg-red-950/10",
+  emerald: "text-slate-300 border-slate-700/40 bg-slate-900/20",
 };
 
 const headerAccentMap: Record<string, string> = {
-  purple: "text-purple-400",
-  cyan: "text-cyan-400",
-  violet: "text-violet-400",
-  emerald: "text-emerald-400",
+  purple: "text-red-400",
+  cyan: "text-slate-200",
+  violet: "text-red-300",
+  emerald: "text-slate-300",
 };
 
 export default function Skills() {
@@ -40,7 +40,7 @@ export default function Skills() {
     <section id="skills" className="py-24 px-6 bg-[#0d0d14]">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <p className="text-xs uppercase tracking-widest text-purple-400 mb-4">
+          <p className="text-xs uppercase tracking-widest text-red-400 mb-4">
             Expertise
           </p>
           <h2 className="text-3xl sm:text-4xl font-bold text-white">
@@ -75,7 +75,7 @@ export default function Skills() {
         </div>
 
         {/* Unity highlight bar */}
-        <div className="mt-12 rounded-2xl bg-gradient-to-r from-purple-950/40 via-[#12121a] to-cyan-950/40 border border-purple-900/30 p-6 flex flex-col sm:flex-row items-center gap-4">
+        <div className="mt-12 rounded-2xl bg-gradient-to-r from-red-950/40 via-[#111111] to-slate-900/40 border border-red-900/30 p-6 flex flex-col sm:flex-row items-center gap-4">
           <div className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center flex-shrink-0">
             <GamepadIcon />
           </div>
@@ -86,8 +86,8 @@ export default function Skills() {
               browser games to 3D desktop shooters.
             </p>
           </div>
-          <div className="sm:ml-auto flex items-center gap-2 text-sm text-purple-400 flex-shrink-0">
-            <span className="w-2 h-2 rounded-full bg-purple-400 animate-pulse" />
+          <div className="sm:ml-auto flex items-center gap-2 text-sm text-red-400 flex-shrink-0">
+            <span className="w-2 h-2 rounded-full bg-red-400 animate-pulse" />
             Active Stack
           </div>
         </div>

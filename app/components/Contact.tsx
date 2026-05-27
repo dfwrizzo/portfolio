@@ -35,7 +35,7 @@ export default function Contact() {
         <div className="section-divider mb-16" />
 
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-xs uppercase tracking-widest text-purple-400 mb-4">
+          <p className="text-xs uppercase tracking-widest text-red-400 mb-4">
             Contact
           </p>
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
@@ -50,7 +50,7 @@ export default function Contact() {
           {/* Email CTA */}
           <a
             href="mailto:castillo.angelo2024@gmail.com"
-            className="btn-glow inline-flex items-center gap-3 px-8 py-4 rounded-full bg-purple-600 hover:bg-purple-500 text-white font-semibold transition-colors duration-200 mb-12"
+            className="btn-glow inline-flex items-center gap-3 px-8 py-4 rounded-full bg-red-600 hover:bg-red-500 text-white font-semibold transition-colors duration-200 mb-12"
           >
             <EmailIcon />
             castillo.angelo2024@gmail.com
@@ -65,7 +65,7 @@ export default function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={s.label}
-                className="w-12 h-12 rounded-xl bg-[#12121a] border border-slate-800 hover:border-purple-700/60 flex items-center justify-center text-slate-400 hover:text-white transition-all duration-200 card-glow"
+                className="w-12 h-12 rounded-xl bg-[#12121a] border border-slate-800 hover:border-red-700/60 flex items-center justify-center text-slate-400 hover:text-white transition-all duration-200 card-glow"
               >
                 {s.icon}
               </a>

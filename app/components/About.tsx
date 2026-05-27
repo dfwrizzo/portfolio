@@ -7,7 +7,7 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-16 items-center">
           {/* Text */}
           <div>
-            <p className="text-xs uppercase tracking-widest text-purple-400 mb-4">
+            <p className="text-xs uppercase tracking-widest text-red-400 mb-4">
               About Me
             </p>
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6 leading-tight">
@@ -39,7 +39,7 @@ export default function About() {
                 href="https://github.com/DFWRIZZO"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 px-4 py-2 rounded-lg bg-[#12121a] border border-slate-800 hover:border-purple-700/60 text-slate-300 hover:text-white text-sm transition-all duration-200"
+                className="flex items-center gap-2 px-4 py-2 rounded-lg bg-[#12121a] border border-slate-800 hover:border-red-700/60 text-slate-300 hover:text-white text-sm transition-all duration-200"
               >
                 <GithubIcon />
                 GitHub
@@ -48,7 +48,7 @@ export default function About() {
                 href="https://dfwrizzo.itch.io"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 px-4 py-2 rounded-lg bg-[#12121a] border border-slate-800 hover:border-purple-700/60 text-slate-300 hover:text-white text-sm transition-all duration-200"
+                className="flex items-center gap-2 px-4 py-2 rounded-lg bg-[#12121a] border border-slate-800 hover:border-red-700/60 text-slate-300 hover:text-white text-sm transition-all duration-200"
               >
                 <ItchIcon />
                 itch.io
@@ -59,11 +59,11 @@ export default function About() {
           {/* Card */}
           <div className="card-glow rounded-2xl bg-[#12121a] p-8">
             <div className="mb-6">
-              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-purple-600 to-cyan-500 flex items-center justify-center text-2xl font-bold text-white mb-4">
+              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-red-600 to-red-400 flex items-center justify-center text-2xl font-bold text-white mb-4">
                 AC
               </div>
               <h3 className="text-xl font-bold text-white">Angelo Castillo</h3>
-              <p className="text-purple-400 text-sm mt-1">Unity Developer · Game Designer</p>
+              <p className="text-red-400 text-sm mt-1">Unity Developer · Game Designer</p>
             </div>
 
             <div className="space-y-3">

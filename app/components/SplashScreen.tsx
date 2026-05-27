@@ -28,10 +28,10 @@ export default function SplashScreen() {
     >
       {/* Ambient glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full blur-3xl pointer-events-none"
-        style={{ background: "radial-gradient(circle, rgba(124,58,237,0.18) 0%, transparent 70%)" }}
+        style={{ background: "radial-gradient(circle, rgba(239,68,68,0.18) 0%, transparent 70%)" }}
       />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 rounded-full blur-3xl pointer-events-none"
-        style={{ background: "radial-gradient(circle, rgba(6,182,212,0.08) 0%, transparent 70%)" }}
+        style={{ background: "radial-gradient(circle, rgba(255,255,255,0.04) 0%, transparent 70%)" }}
       />
 
       <div className="relative z-10 flex flex-col items-center select-none">
@@ -42,7 +42,7 @@ export default function SplashScreen() {
               className="font-black leading-none"
               style={{
                 fontSize: "clamp(6rem, 20vw, 12rem)",
-                background: "linear-gradient(135deg, #a78bfa 0%, #7c3aed 100%)",
+                background: "linear-gradient(135deg, #ef4444 0%, #dc2626 100%)",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
                 backgroundClip: "text",
@@ -56,7 +56,7 @@ export default function SplashScreen() {
               className="font-black leading-none"
               style={{
                 fontSize: "clamp(6rem, 20vw, 12rem)",
-                background: "linear-gradient(135deg, #06b6d4 0%, #0891b2 100%)",
+                background: "linear-gradient(135deg, #ffffff 0%, #e2e8f0 100%)",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
                 backgroundClip: "text",
@@ -82,7 +82,7 @@ export default function SplashScreen() {
               className="font-black tracking-tight leading-none"
               style={{
                 fontSize: "clamp(3rem, 12vw, 8rem)",
-                background: "linear-gradient(135deg, #a78bfa 0%, #7c3aed 40%, #06b6d4 100%)",
+                background: "linear-gradient(135deg, #ef4444 0%, #dc2626 50%, #ffffff 100%)",
                 backgroundSize: "200% auto",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",

@@ -23,7 +23,7 @@ export default function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-[#0a0a0f]/90 backdrop-blur-md border-b border-purple-900/30 shadow-lg shadow-purple-950/20"
+          ? "bg-[#0a0a0f]/90 backdrop-blur-md border-b border-red-900/30 shadow-lg shadow-red-950/20"
           : "bg-transparent"
       }`}
     >
@@ -52,7 +52,7 @@ export default function Navbar() {
               href="https://dfwrizzo.itch.io"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm px-4 py-2 rounded-full border border-purple-600 text-purple-400 hover:bg-purple-600 hover:text-white transition-all duration-200"
+              className="text-sm px-4 py-2 rounded-full border border-red-600 text-red-400 hover:bg-red-600 hover:text-white transition-all duration-200"
             >
               itch.io
             </a>
@@ -81,7 +81,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden bg-[#12121a]/95 backdrop-blur-md border-t border-purple-900/20 px-6 py-4">
+        <div className="md:hidden bg-[#12121a]/95 backdrop-blur-md border-t border-red-900/20 px-6 py-4">
           <ul className="flex flex-col gap-4">
             {links.map((l) => (
               <li key={l.href}>
@@ -99,7 +99,7 @@ export default function Navbar() {
                 href="https://dfwrizzo.itch.io"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block text-sm px-4 py-2 rounded-full border border-purple-600 text-purple-400"
+                className="inline-block text-sm px-4 py-2 rounded-full border border-red-600 text-red-400"
                 onClick={() => setOpen(false)}
               >
                 itch.io

@@ -59,27 +59,27 @@ const companies: Company[] = [
     period: "Current",
     summary:
       "Building games for high-value clients and bridging the gap between game design and development. Also engineered an internal project management tool connecting the accounts team to clients.",
-    accentColor: "text-purple-400",
-    borderColor: "border-purple-900/40",
+    accentColor: "text-red-400",
+    borderColor: "border-red-900/40",
     logo: <PunxBadge />,
     slides: [
       {
         title: "Client Game Development",
         description:
           "Designing and developing games for high-value clients using Unity and C#. Serving as the bridge between game designers and developers — translating creative concepts into polished, functional game builds.",
-        placeholder: "linear-gradient(135deg, #2e1065, #4c1d95, #0f172a)",
+        placeholder: "linear-gradient(135deg, #450a0a, #7f1d1d, #0f172a)",
       },
       {
         title: "Project Management Tool",
         description:
           "Engineered an internal project management platform that aligns the team with task workflows and connects the accounts team directly to clients in an innovative way — streamlining communication and project delivery.",
-        placeholder: "linear-gradient(135deg, #4c1d95, #6d28d9, #1e1b4b)",
+        placeholder: "linear-gradient(135deg, #7f1d1d, #991b1b, #1c0a0a)",
       },
       {
         title: "Design-to-Dev Bridge",
         description:
           "Acted as the key link between game designers and developers at PUNX. Ensuring design intent is preserved through development, reducing iteration cycles and delivering client experiences that match the creative vision.",
-        placeholder: "linear-gradient(135deg, #1e1b4b, #312e81, #0f172a)",
+        placeholder: "linear-gradient(135deg, #1c0a0a, #7f1d1d, #0f172a)",
       },
     ],
   },
@@ -140,7 +140,7 @@ export default function Experience() {
           <div className="section-divider mb-16" />
 
           <div className="text-center mb-16">
-            <p className="text-xs uppercase tracking-widest text-purple-400 mb-4">
+            <p className="text-xs uppercase tracking-widest text-red-400 mb-4">
               Experience
             </p>
             <h2 className="text-3xl sm:text-4xl font-bold text-white">
@@ -203,7 +203,7 @@ export default function Experience() {
           <div
             className="relative w-full max-w-2xl bg-[#12121a] rounded-3xl overflow-hidden shadow-2xl"
             style={{
-              border: "1px solid rgba(124,58,237,0.25)",
+              border: "1px solid rgba(239,68,68,0.25)",
               animation: "modalExpand 0.35s cubic-bezier(0.22,1,0.36,1) forwards",
             }}
             onClick={(e) => e.stopPropagation()}
@@ -322,7 +322,7 @@ function TimberWolfBadge() {
 function PunxBadge() {
   return (
     <div className="flex items-center gap-2.5">
-      <div className="w-10 h-10 rounded-xl bg-purple-950/60 border border-purple-800/40 flex items-center justify-center flex-shrink-0 overflow-hidden">
+      <div className="w-10 h-10 rounded-xl bg-red-950/60 border border-red-800/40 flex items-center justify-center flex-shrink-0 overflow-hidden">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="https://punx.ai/wp-content/uploads/2023/04/punx_logo_final.png"
@@ -335,7 +335,7 @@ function PunxBadge() {
       </div>
       <div>
         <div className="text-white font-bold text-sm leading-tight">PUNX</div>
-        <div className="text-purple-400 text-xs">AI Creative Agency</div>
+        <div className="text-red-400 text-xs">AI Creative Agency</div>
       </div>
     </div>
   );
