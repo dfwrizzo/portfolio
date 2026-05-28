@@ -35,7 +35,7 @@ export default function Contact() {
         <div className="section-divider mb-16" />
 
         <div className="max-w-xl mx-auto text-center">
-          <p className="text-xs uppercase tracking-widest text-red-400 mb-3">Contact</p>
+          <p className="text-xs uppercase tracking-widest text-slate-500 mb-3">Contact</p>
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
             Let&apos;s build <span className="gradient-text">something</span>
           </h2>
@@ -45,7 +45,7 @@ export default function Contact() {
 
           <a
             href="mailto:castillo.angelo2024@gmail.com"
-            className="btn-glow inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-red-600 hover:bg-red-500 text-white font-semibold transition-colors mb-10"
+            className="btn-glow inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-white hover:bg-slate-100 text-black font-semibold transition-colors mb-10"
           >
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
@@ -62,7 +62,7 @@ export default function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={s.label}
-                className="w-12 h-12 rounded-xl bg-[#12121a] border border-slate-800 hover:border-red-700/60 flex items-center justify-center text-slate-400 hover:text-white transition-all duration-200 card-glow"
+                className="w-12 h-12 rounded-xl bg-[#12121a] border border-white/6 hover:border-white/25 flex items-center justify-center text-slate-400 hover:text-white transition-all duration-200"
               >
                 {s.icon}
               </a>

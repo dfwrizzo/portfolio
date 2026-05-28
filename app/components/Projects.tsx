@@ -65,7 +65,7 @@ export default function Projects() {
 
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-12">
           <div>
-            <p className="text-xs uppercase tracking-widest text-red-400 mb-2">Portfolio</p>
+            <p className="text-xs uppercase tracking-widest text-slate-500 mb-2">Portfolio</p>
             <h2 className="text-3xl font-bold text-white">
               My <span className="gradient-text">Games</span>
             </h2>

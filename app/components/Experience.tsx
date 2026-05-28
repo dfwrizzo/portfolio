@@ -140,7 +140,7 @@ export default function Experience() {
           <div className="section-divider mb-16" />
 
           <div className="text-center mb-16">
-            <p className="text-xs uppercase tracking-widest text-red-400 mb-4">
+            <p className="text-xs uppercase tracking-widest text-slate-500 mb-4">
               Experience
             </p>
             <h2 className="text-3xl sm:text-4xl font-bold text-white">

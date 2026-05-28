@@ -20,13 +20,13 @@ const tools = [
 function Card({ name, sub, Icon, index }: { name: string; sub: string; Icon: () => React.ReactElement; index: number }) {
   return (
     <div
-      className="flex flex-col items-center gap-3 p-5 rounded-2xl bg-[#0c0c14] border border-white/5 hover:border-red-700/50 hover:bg-[#111119] transition-colors duration-300 cursor-default group"
+      className="flex flex-col items-center gap-3 p-5 rounded-2xl bg-[#0c0c14] border border-white/5 hover:border-white/20 hover:bg-[#111119] transition-colors duration-300 cursor-default group"
       style={{
         animation: `techFloat 3.5s ease-in-out infinite`,
         animationDelay: `${index * 0.18}s`,
       }}
     >
-      <div className="w-10 h-10 flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:drop-shadow-[0_0_10px_rgba(239,68,68,0.4)]">
+      <div className="w-10 h-10 flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.25)]">
         <Icon />
       </div>
       <div className="text-center">
@@ -41,12 +41,12 @@ export default function TechStack() {
   return (
     <section id="stack" className="py-20 px-6 relative">
       {/* Subtle red top fade */}
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-red-600/30 to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/15 to-transparent" />
 
       <div className="max-w-5xl mx-auto">
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-12">
           <div>
-            <p className="text-xs uppercase tracking-widest text-red-400 mb-2">Tech Stack</p>
+            <p className="text-xs uppercase tracking-widest text-slate-500 mb-2">Tech Stack</p>
             <h2 className="text-3xl font-bold text-white">
               What I <span className="gradient-text">operate</span>
             </h2>
@@ -59,7 +59,7 @@ export default function TechStack() {
         {/* Core */}
         <div className="mb-8">
           <div className="flex items-center gap-3 mb-4">
-            <div className="w-1 h-4 bg-red-600 rounded-full" />
+            <div className="w-1 h-4 bg-white rounded-full" />
             <p className="text-xs text-slate-500 uppercase tracking-widest">Core</p>
           </div>
           <div className="flex flex-wrap gap-3">

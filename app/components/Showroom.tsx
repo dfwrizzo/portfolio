@@ -53,7 +53,7 @@ export default function Showroom() {
 
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-12">
           <div>
-            <p className="text-xs uppercase tracking-widest text-red-400 mb-2">Showroom</p>
+            <p className="text-xs uppercase tracking-widest text-slate-500 mb-2">Showroom</p>
             <h2 className="text-3xl font-bold text-white">
               In <span className="gradient-text">Action</span>
             </h2>

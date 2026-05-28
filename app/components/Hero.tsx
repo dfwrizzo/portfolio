@@ -13,9 +13,9 @@ export default function Hero() {
           {/* Left — content */}
           <div>
             {/* Availability badge */}
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-red-700/40 bg-red-950/30 mb-8">
-              <span className="w-1.5 h-1.5 rounded-full bg-red-400 animate-pulse" />
-              <span className="text-red-400 text-xs font-medium tracking-wide">Open to opportunities</span>
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/15 bg-white/5 mb-8">
+              <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
+              <span className="text-slate-300 text-xs font-medium tracking-wide">Open to opportunities</span>
             </div>
 
             {/* Name */}
@@ -39,7 +39,7 @@ export default function Hero() {
             <div className="flex flex-wrap gap-3 mb-10">
               <a
                 href="#games"
-                className="btn-glow px-6 py-3 rounded-lg bg-red-600 hover:bg-red-500 text-white font-semibold text-sm transition-colors"
+                className="btn-glow px-6 py-3 rounded-lg bg-white hover:bg-slate-100 text-black font-semibold text-sm transition-colors"
               >
                 View Games
               </a>
@@ -75,7 +75,7 @@ export default function Hero() {
               <div
                 key={s.label}
                 className="rounded-xl bg-[#0c0c14] px-5 py-4 flex items-center justify-between transition-all duration-200 hover:bg-[#111119]"
-                style={{ borderTop: "1px solid rgba(255,255,255,0.04)", borderRight: "1px solid rgba(255,255,255,0.04)", borderBottom: "1px solid rgba(255,255,255,0.04)", borderLeft: "2px solid #ef4444" }}
+                style={{ borderTop: "1px solid rgba(255,255,255,0.06)", borderRight: "1px solid rgba(255,255,255,0.06)", borderBottom: "1px solid rgba(255,255,255,0.06)", borderLeft: "2px solid #ffffff" }}
               >
                 <span className="text-slate-500 text-sm">{s.label}</span>
                 <span className="text-xl font-black text-white">{s.value}</span>
