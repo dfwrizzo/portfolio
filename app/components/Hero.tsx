@@ -74,7 +74,8 @@ export default function Hero() {
             ].map((s) => (
               <div
                 key={s.label}
-                className="card-glow rounded-xl bg-[#12121a] px-6 py-4 flex items-center justify-between"
+                className="rounded-xl bg-[#0c0c14] px-5 py-4 flex items-center justify-between transition-all duration-200 hover:bg-[#111119]"
+                style={{ borderTop: "1px solid rgba(255,255,255,0.04)", borderRight: "1px solid rgba(255,255,255,0.04)", borderBottom: "1px solid rgba(255,255,255,0.04)", borderLeft: "2px solid #ef4444" }}
               >
                 <span className="text-slate-500 text-sm">{s.label}</span>
                 <span className="text-xl font-black text-white">{s.value}</span>

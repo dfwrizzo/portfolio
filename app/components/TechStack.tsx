@@ -17,10 +17,16 @@ const tools = [
   { name: "Excel",         sub: "Productivity",     Icon: ExcelIcon        },
 ];
 
-function Card({ name, sub, Icon }: { name: string; sub: string; Icon: () => React.ReactElement }) {
+function Card({ name, sub, Icon, index }: { name: string; sub: string; Icon: () => React.ReactElement; index: number }) {
   return (
-    <div className="flex flex-col items-center gap-3 p-5 rounded-2xl bg-[#0f0f16] border border-white/5 hover:border-red-700/30 hover:bg-[#141420] transition-all duration-200 group cursor-default min-w-[100px]">
-      <div className="w-10 h-10 flex items-center justify-center">
+    <div
+      className="flex flex-col items-center gap-3 p-5 rounded-2xl bg-[#0c0c14] border border-white/5 hover:border-red-700/50 hover:bg-[#111119] transition-colors duration-300 cursor-default group"
+      style={{
+        animation: `techFloat 3.5s ease-in-out infinite`,
+        animationDelay: `${index * 0.18}s`,
+      }}
+    >
+      <div className="w-10 h-10 flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:drop-shadow-[0_0_10px_rgba(239,68,68,0.4)]">
         <Icon />
       </div>
       <div className="text-center">
@@ -33,10 +39,11 @@ function Card({ name, sub, Icon }: { name: string; sub: string; Icon: () => Reac
 
 export default function TechStack() {
   return (
-    <section id="stack" className="py-20 px-6">
-      <div className="max-w-5xl mx-auto">
-        <div className="section-divider mb-16" />
+    <section id="stack" className="py-20 px-6 relative">
+      {/* Subtle red top fade */}
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-red-600/30 to-transparent" />
 
+      <div className="max-w-5xl mx-auto">
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-12">
           <div>
             <p className="text-xs uppercase tracking-widest text-red-400 mb-2">Tech Stack</p>
@@ -49,19 +56,25 @@ export default function TechStack() {
           </p>
         </div>
 
-        {/* Primary stack */}
-        <div className="mb-4">
-          <p className="text-xs text-slate-600 uppercase tracking-widest mb-4">Core</p>
+        {/* Core */}
+        <div className="mb-8">
+          <div className="flex items-center gap-3 mb-4">
+            <div className="w-1 h-4 bg-red-600 rounded-full" />
+            <p className="text-xs text-slate-500 uppercase tracking-widest">Core</p>
+          </div>
           <div className="flex flex-wrap gap-3">
-            {primary.map((t) => <Card key={t.name} {...t} />)}
+            {primary.map((t, i) => <Card key={t.name} {...t} index={i} />)}
           </div>
         </div>
 
         {/* Tools */}
-        <div className="mt-8">
-          <p className="text-xs text-slate-600 uppercase tracking-widest mb-4">Tools &amp; Platforms</p>
+        <div>
+          <div className="flex items-center gap-3 mb-4">
+            <div className="w-1 h-4 bg-slate-700 rounded-full" />
+            <p className="text-xs text-slate-500 uppercase tracking-widest">Tools &amp; Platforms</p>
+          </div>
           <div className="flex flex-wrap gap-3">
-            {tools.map((t) => <Card key={t.name} {...t} />)}
+            {tools.map((t, i) => <Card key={t.name} {...t} index={primary.length + i} />)}
           </div>
         </div>
       </div>
@@ -74,10 +87,10 @@ export default function TechStack() {
 function UnityIcon() {
   return (
     <svg viewBox="0 0 40 40" fill="none" width="36" height="36">
-      <path d="M20 4L35 13V27L20 36L5 27V13L20 4Z" stroke="rgba(255,255,255,0.1)" strokeWidth="0.5"/>
-      <path d="M20 4L35 13L20 22L5 13Z" fill="rgba(255,255,255,0.92)"/>
-      <path d="M5 13L20 22V36L5 27Z" fill="rgba(255,255,255,0.42)"/>
-      <path d="M35 13V27L20 36V22Z" fill="rgba(255,255,255,0.65)"/>
+      <path d="M20 4L35 13V27L20 36L5 27V13L20 4Z" stroke="rgba(255,255,255,0.08)" strokeWidth="0.5"/>
+      <path d="M20 4L35 13L20 22L5 13Z"  fill="rgba(255,255,255,0.92)"/>
+      <path d="M5 13L20 22V36L5 27Z"     fill="rgba(255,255,255,0.42)"/>
+      <path d="M35 13V27L20 36V22Z"      fill="rgba(255,255,255,0.65)"/>
     </svg>
   );
 }
@@ -94,9 +107,9 @@ function CSharpIcon() {
 function FirebaseIcon() {
   return (
     <svg viewBox="0 0 40 40" fill="none" width="36" height="36">
-      <path d="M9 30L14 8L21 19L18 10L28 4L22 30Z" fill="#FFA000"/>
-      <path d="M9 30L22 30L28 4L18 10Z" fill="#F57F17"/>
-      <path d="M22 30L32 24L28 4Z" fill="#FFCA28"/>
+      <path d="M9 30L14 8L21 19L18 10L28 4L22 30Z"  fill="#FFA000"/>
+      <path d="M9 30L22 30L28 4L18 10Z"             fill="#F57F17"/>
+      <path d="M22 30L32 24L28 4Z"                  fill="#FFCA28"/>
     </svg>
   );
 }
