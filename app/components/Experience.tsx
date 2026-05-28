@@ -28,8 +28,8 @@ const companies: Company[] = [
     period: "Internship",
     summary:
       "Assisted QA, contributed to website design, and delivered weekly analytics reports for Go, Operative! — an AR mobile game encouraging kids to go outdoors.",
-    accentColor: "text-slate-300",
-    borderColor: "border-white/10",
+    accentColor: "text-red-400",
+    borderColor: "border-red-900/40",
     logo: <TimberWolfBadge />,
     slides: [
       {
@@ -59,8 +59,8 @@ const companies: Company[] = [
     period: "Current",
     summary:
       "Building games for high-value clients and bridging the gap between game design and development. Also engineered an internal project management tool connecting the accounts team to clients.",
-    accentColor: "text-slate-300",
-    borderColor: "border-white/10",
+    accentColor: "text-red-400",
+    borderColor: "border-red-900/40",
     logo: <PunxBadge />,
     slides: [
       {
@@ -90,8 +90,8 @@ const companies: Company[] = [
     period: "Contract",
     summary:
       "Approached by Mega Cat Studios to playtest an upcoming unreleased title. My contributions were recognized and I was included in the official game credits.",
-    accentColor: "text-slate-300",
-    borderColor: "border-white/10",
+    accentColor: "text-red-400",
+    borderColor: "border-red-900/40",
     logo: <MegaCatBadge />,
     slides: [
       {
@@ -140,7 +140,7 @@ export default function Experience() {
           <div className="section-divider mb-16" />
 
           <div className="text-center mb-16">
-            <p className="text-xs uppercase tracking-widest text-slate-500 mb-4">
+            <p className="text-xs uppercase tracking-widest text-red-400 mb-4">
               Experience
             </p>
             <h2 className="text-3xl sm:text-4xl font-bold text-white">
@@ -303,8 +303,8 @@ export default function Experience() {
 function TimberWolfBadge() {
   return (
     <div className="flex items-center gap-2.5">
-      <div className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center flex-shrink-0">
-        <svg width="20" height="20" viewBox="0 0 32 32" fill="none" className="text-slate-300">
+      <div className="w-10 h-10 rounded-xl bg-red-950/50 border border-red-900/40 flex items-center justify-center flex-shrink-0">
+        <svg width="20" height="20" viewBox="0 0 32 32" fill="none" className="text-red-400">
           <path d="M16 3L4 10v12l12 7 12-7V10L16 3z" stroke="currentColor" strokeWidth="1.5" />
           <path d="M11 15c0 0 1.5-2.5 5-2.5s5 2.5 5 2.5" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
           <circle cx="13.5" cy="17" r="1" fill="currentColor" />
@@ -313,7 +313,7 @@ function TimberWolfBadge() {
       </div>
       <div>
         <div className="text-white font-bold text-sm leading-tight">Timber Wolf</div>
-        <div className="text-slate-500 text-xs">Studios</div>
+        <div className="text-red-400/60 text-xs">Studios</div>
       </div>
     </div>
   );
@@ -322,7 +322,7 @@ function TimberWolfBadge() {
 function PunxBadge() {
   return (
     <div className="flex items-center gap-2.5">
-      <div className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center flex-shrink-0 overflow-hidden">
+      <div className="w-10 h-10 rounded-xl bg-red-950/50 border border-red-900/40 flex items-center justify-center flex-shrink-0 overflow-hidden">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="https://punx.ai/wp-content/uploads/2023/04/punx_logo_final.png"
@@ -335,7 +335,7 @@ function PunxBadge() {
       </div>
       <div>
         <div className="text-white font-bold text-sm leading-tight">PUNX</div>
-        <div className="text-slate-500 text-xs">AI Creative Agency</div>
+        <div className="text-red-400/60 text-xs">AI Creative Agency</div>
       </div>
     </div>
   );
@@ -344,7 +344,7 @@ function PunxBadge() {
 function MegaCatBadge() {
   return (
     <div className="flex items-center gap-2.5">
-      <div className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center flex-shrink-0 overflow-hidden">
+      <div className="w-10 h-10 rounded-xl bg-red-950/50 border border-red-900/40 flex items-center justify-center flex-shrink-0 overflow-hidden">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="https://cdn.shopify.com/s/files/1/0444/0919/2598/files/mcs_logo_white.png?v=1771568420&width=400"
@@ -357,7 +357,7 @@ function MegaCatBadge() {
       </div>
       <div>
         <div className="text-white font-bold text-sm leading-tight">Mega Cat Studios</div>
-        <div className="text-slate-500 text-xs">Game Developer & Publisher</div>
+        <div className="text-red-400/60 text-xs">Game Developer & Publisher</div>
       </div>
     </div>
   );
