@@ -8,13 +8,15 @@ type ShowroomItem = {
   span?: string;
 };
 
+const ACCENT = "#ffffff";
+
 const items: ShowroomItem[] = [
   {
     title: "Zombie Hunters — Gameplay",
     description: "Roguelike progression system in action — skill drops, horde scaling, and the survival loop from early game to endgame chaos.",
     tags: ["Zombie Hunters", "2D Roguelike", "Gameplay"],
-    accent: "#ef4444",
-    gradient: "from-red-950 to-[#060101]",
+    accent: ACCENT,
+    gradient: "from-white/5 to-transparent",
     span: "lg:col-span-2",
     // videoUrl: "https://www.youtube.com/embed/YOUR_ID",
   },
@@ -22,16 +24,16 @@ const items: ShowroomItem[] = [
     title: "Purgatory — Movement Demo",
     description: "Fluid 3D movement and momentum-based speedrunning mechanics.",
     tags: ["Purgatory", "3D Shooter"],
-    accent: "#a78bfa",
-    gradient: "from-purple-950 to-[#02010a]",
+    accent: ACCENT,
+    gradient: "from-white/4 to-transparent",
     // videoUrl: "https://www.youtube.com/embed/YOUR_ID",
   },
   {
     title: "CodeQuest — Team Showcase",
     description: "Full walkthrough of our capstone — from design doc to delivery. Led a team of developers through the full production cycle.",
     tags: ["CodeQuest", "3D Puzzle", "Team Lead"],
-    accent: "#22d3ee",
-    gradient: "from-cyan-950 to-[#01080c]",
+    accent: ACCENT,
+    gradient: "from-white/5 to-transparent",
     span: "lg:col-span-2",
     // videoUrl: "https://www.youtube.com/embed/YOUR_ID",
   },
@@ -39,8 +41,8 @@ const items: ShowroomItem[] = [
     title: "Pokemon Top Trumps — Overview",
     description: "Card battle mechanics, deck selection system, and stat comparison gameplay.",
     tags: ["Pokemon Top Trumps", "Card Game"],
-    accent: "#fbbf24",
-    gradient: "from-yellow-950 to-[#080400]",
+    accent: ACCENT,
+    gradient: "from-white/4 to-transparent",
     // videoUrl: "https://www.youtube.com/embed/YOUR_ID",
   },
 ];
